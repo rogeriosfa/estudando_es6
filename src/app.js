@@ -1,9 +1,5 @@
-let name = "Rogério";
-let age = 25;
+function calculation(valueA, valueB = 4) {
+    return valueA + valueB;
+}
 
-let text = `
-    name: ${ name }
-    age: ${ age }
-`;
-
-console.log(text);
+console.log(calculation(6));
