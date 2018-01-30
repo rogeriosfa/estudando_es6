@@ -1,9 +1,5 @@
-let color = new Set();
-
-color.add("red").add("green").add("red");
-
-if (color.size === 2 && color.has("red")) {
-    for (let key of color.values()) {
-        console.log(key);
-    }
-}
+var number = 1234.55;
+var En = new Intl.NumberFormat('es-US').format(number);
+var De = new Intl.NumberFormat('de-DE').format(number);
+console.log(En);
+console.log(De);
